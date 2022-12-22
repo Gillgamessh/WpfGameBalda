@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfGameBalda.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfGameBalda"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="520">
+    <Grid>
+        
+        <StackPanel Height="200" HorizontalAlignment="Left" Margin="141,101,0,0" Name="fieldStackPanel" VerticalAlignment="Top" Width="200" Orientation="Vertical"></StackPanel>
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="12,12,0,0" Name="player1Name" Text="TextBlock" VerticalAlignment="Top" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="461,10,0,0" Name="player2Name" Text="TextBlock" VerticalAlignment="Top" />
+        <StackPanel Height="170" HorizontalAlignment="Left" Margin="12,70,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="107" />
+        <StackPanel Height="170" HorizontalAlignment="Left" Margin="377,70,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="107" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="12,41,0,0" Name="player1Points" Text="TextBlock" VerticalAlignment="Top" />
+        <TextBlock Height="23" HorizontalAlignment="Right" Margin="0,41,12,0" Name="player2Points" Text="TextBlock" VerticalAlignment="Top" />
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="219,317,0,0" Name="textBlock1" Text="TextBlock" VerticalAlignment="Top" />
+        <Button Content="Завершить ход" Height="23" HorizontalAlignment="Left" Margin="192,355,0,0" Name="button1" VerticalAlignment="Top" Width="108" Click="Button1Click" />
+        <GroupBox Height="107" HorizontalAlignment="Left" Margin="141,310,0,0" Name="groupBox1" VerticalAlignment="Top" Width="200" Background="White">
+            <Grid>
+                <Button Content="Добавить" Height="23" HorizontalAlignment="Left" Margin="6,71,0,0" Name="button2" VerticalAlignment="Top" Width="75" Click="button2_Click" />
+                <Button Content="Отменить" Height="23" HorizontalAlignment="Left" Margin="107,71,0,0" Name="button3" VerticalAlignment="Top" Width="75" Click="button3_Click" />
+                <TextBlock Height="61" HorizontalAlignment="Left" Margin="6,6,0,0" Name="acceptText" Text="" VerticalAlignment="Top" Width="176" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
